@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F-Guide - Life & Project Navigator</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="profile">
+        <div class="profile-img">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="profile-info">
+          <h1>F-Guide</h1>
+          <p class="subtitle">Life & Project Navigator</p>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-text">A cada passo, mais próx'mo da sua melhor versão.</div>
+        <div class="progress-squares"></div>
+      </div>
+    </header>
+
+    <!-- Priority Section -->
+    <section class="priorities">
+      <h2>Prioridade do Dia</h2>
+      <div class="priority-list">
+        <div class="priority-item">
+          <span>Concluir design do Projeto X</span>
+          <a href="#" class="access-btn">Acessar</a>
+        </div>
+        <div class="priority-item">
+          <span>Atualizar Vision Board</span>
+          <a href="#" class="access-btn">Acessar</a>
+        </div>
+        <div class="priority-item">
+          <span>Revisar orçamento mensal</span>
+          <a href="#" class="access-btn">Acessar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid Sections -->
+    <div class="grid-container">
+      <div class="grid-item">
+        <i class="fas fa-home"></i>
+        <div class="item-content">
+          <h3>F-House</h3>
+          <p>Projetos e melhorias de casa</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+
+      <div class="grid-item">
+        <i class="fas fa-user"></i>
+        <div class="item-content">
+          <h3>F-Life</h3>
+          <p>Saude, rotina e vida pessoal</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+
+      <div class="grid-item">
+        <i class="fas fa-briefcase"></i>
+        <div class="item-content">
+          <h3>F-Works</h3>
+          <p>Projetos profissionais e clientes</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+
+      <div class="grid-item">
+        <i class="fas fa-flask"></i>
+        <div class="item-content">
+          <h3>F-Lab</h3>
+          <p>Ideias experinnciais e inovações</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+
+      <div class="grid-item">
+        <i class="fas fa-fire"></i>
+        <div class="item-content">
+          <h3>F-Core</h3>
+          <p>Propósito e princípios pessoais</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+
+      <div class="grid-item">
+        <i class="fas fa-bullseye"></i>
+        <div class="item-content">
+          <h3>VFX</h3>
+          <p>Vision Board dos sonhos</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+
+      <div class="grid-item">
+        <i class="fas fa-dollar-sign"></i>
+        <div class="item-content">
+          <h3>Finanças</h3>
+          <p>Gestao e controle financeiro</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+
+      <div class="grid-item">
+        <i class="fas fa-chart-line"></i>
+        <div class="item-content">
+          <h3>Growth Board</h3>
+          <p>Evolução pessoal e metas batidas</p>
+        </div>
+        <a href="#" class="access-btn">Acessar</a>
+      </div>
+    </div>
+
+    <!-- Activity Tracker Section -->
+    <section class="activity-tracker">
+      <h2>Registro de Atividades</h2>
+      <div class="tracker-grid">
+        <div class="tracker-legend">
+          <span class="legend-item">
+            <span class="legend-box level-0"></span>
+            <span>Nenhuma atividade</span>
+          </span>
+          <span class="legend-item">
+            <span class="legend-box level-1"></span>
+            <span>1-3 atividades</span>
+          </span>
+          <span class="legend-item">
+            <span class="legend-box level-2"></span>
+            <span>4-6 atividades</span>
+          </span>
+          <span class="legend-item">
+            <span class="legend-box level-3"></span>
+            <span>7+ atividades</span>
+          </span>
+        </div>
+        <div class="tracker-calendar" id="activity-calendar"></div>
+      </div>
+    </section>
+
+    <!-- Shortcuts Section -->
+    <section class="shortcuts">
+      <h2>Atalhos</h2>
+      <div class="shortcuts-list">
+        <a href="#" class="shortcut-item">Vision Board</a>
+        <a href="#" class="shortcut-item">Black Hole Project</a>
+        <a href="#" class="shortcut-item">Finanças</a>
+        <a href="#" class="shortcut-item">Growth Board</a>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="src/scripts/main.js"></script>
+</body>
+
+</html>
