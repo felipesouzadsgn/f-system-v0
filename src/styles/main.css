@@ -362,4 +362,103 @@ body {
     .profile-info h1 {
         font-size: 24px;
     }
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.footer-logo i {
+    color: var(--accent-color);
+    font-size: 36px;
+}
+
+.footer-description {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin-top: -8px;
+}
+
+.footer-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    margin: 8px 0;
+}
+
+.footer-copyright {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.footer-copyright a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.footer-copyright a:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 16px;
+        margin-top: 40px;
+    }
+
+    .footer-content {
+        padding: 30px 20px;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+
+    .footer-logo i {
+        font-size: 32px;
+    }
+
+    .footer-description {
+        font-size: 14px;
+    }
 } 
