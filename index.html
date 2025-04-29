@@ -4,7 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F-Guide - Life & Project Navigator</title>
+  <meta name="description"
+    content="F-Guide - Um dashboard pessoal para gerenciamento de vida e projetos. Organize suas atividades, acompanhe seu progresso e alcance seus objetivos com eficiência.">
+  <meta name="keywords"
+    content="gerenciamento de vida, produtividade pessoal, dashboard, projetos pessoais, organização, metas, atividades">
+  <meta name="author" content="Felipe Souza">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://f-guide.com/">
+  <meta property="og:title" content="F-Guide - Life & Project Navigator">
+  <meta property="og:description"
+    content="Um dashboard pessoal para gerenciamento de vida e projetos. Organize suas atividades, acompanhe seu progresso e alcance seus objetivos.">
+  <meta property="og:image" content="src/assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://f-guide.com/">
+  <meta property="twitter:title" content="F-Guide - Life & Project Navigator">
+  <meta property="twitter:description"
+    content="Um dashboard pessoal para gerenciamento de vida e projetos. Organize suas atividades, acompanhe seu progresso e alcance seus objetivos.">
+  <meta property="twitter:image" content="src/assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/assets/apple-touch-icon.png">
+  <link rel="manifest" href="src/assets/site.webmanifest">
+  <meta name="theme-color" content="#1a1a1a">
+
+  <title>F-Guide - Life & Project Navigator | Gerenciamento de Vida e Projetos</title>
   <link rel="stylesheet" href="src/styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,9 +42,9 @@
 <body>
   <div class="container">
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="profile">
-        <div class="profile-img">
+        <div class="profile-img" role="img" aria-label="Ícone de perfil do usuário">
           <i class="fas fa-user"></i>
         </div>
         <div class="profile-info">
@@ -22,40 +52,40 @@
           <p class="subtitle">Life & Project Navigator</p>
         </div>
       </div>
-      <div class="progress-bar">
+      <div class="progress-bar" role="progressbar" aria-label="Progresso de atividades">
         <div class="progress-text">A cada passo, mais próx'mo da sua melhor versão.</div>
         <div class="progress-squares"></div>
       </div>
     </header>
 
     <!-- Priority Section -->
-    <section class="priorities">
-      <h2>Prioridade do Dia</h2>
+    <section class="priorities" aria-labelledby="priorities-title">
+      <h2 id="priorities-title">Prioridade do Dia</h2>
       <div class="priority-list">
         <div class="priority-item">
           <span>Concluir design do Projeto X</span>
-          <a href="#" class="access-btn">Acessar</a>
+          <a href="#" class="access-btn" aria-label="Acessar projeto X">Acessar</a>
         </div>
         <div class="priority-item">
           <span>Atualizar Vision Board</span>
-          <a href="#" class="access-btn">Acessar</a>
+          <a href="#" class="access-btn" aria-label="Acessar Vision Board">Acessar</a>
         </div>
         <div class="priority-item">
           <span>Revisar orçamento mensal</span>
-          <a href="#" class="access-btn">Acessar</a>
+          <a href="#" class="access-btn" aria-label="Acessar orçamento">Acessar</a>
         </div>
       </div>
     </section>
 
     <!-- Grid Sections -->
-    <div class="grid-container">
+    <div class="grid-container" aria-label="Áreas principais">
       <div class="grid-item">
-        <i class="fas fa-home"></i>
+        <i class="fas fa-home" aria-hidden="true"></i>
         <div class="item-content">
           <h3>F-House</h3>
           <p>Projetos e melhorias de casa</p>
         </div>
-        <a href="#" class="access-btn">Acessar</a>
+        <a href="#" class="access-btn" aria-label="Acessar F-House">Acessar</a>
       </div>
 
       <div class="grid-item">
@@ -123,10 +153,10 @@
     </div>
 
     <!-- Activity Tracker Section -->
-    <section class="activity-tracker">
-      <h2>Registro de Atividades</h2>
+    <section class="activity-tracker" aria-labelledby="activity-title">
+      <h2 id="activity-title">Registro de Atividades</h2>
       <div class="tracker-grid">
-        <div class="tracker-legend">
+        <div class="tracker-legend" role="legend">
           <span class="legend-item">
             <span class="legend-box level-0"></span>
             <span>Nenhuma atividade</span>
@@ -144,31 +174,31 @@
             <span>7+ atividades</span>
           </span>
         </div>
-        <div class="tracker-calendar" id="activity-calendar"></div>
+        <div class="tracker-calendar" id="activity-calendar" role="grid" aria-label="Calendário de atividades"></div>
       </div>
     </section>
 
     <!-- Shortcuts Section -->
-    <section class="shortcuts">
-      <h2>Atalhos</h2>
-      <div class="shortcuts-list">
+    <section class="shortcuts" aria-labelledby="shortcuts-title">
+      <h2 id="shortcuts-title">Atalhos</h2>
+      <nav class="shortcuts-list" role="navigation" aria-label="Atalhos rápidos">
         <a href="#" class="shortcut-item">Vision Board</a>
         <a href="#" class="shortcut-item">Black Hole Project</a>
         <a href="#" class="shortcut-item">Finanças</a>
         <a href="#" class="shortcut-item">Growth Board</a>
-      </div>
+      </nav>
     </section>
   </div>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="footer-content">
       <div class="footer-main">
         <div class="footer-logo">
-          <i class="fas fa-compass"></i>
+          <i class="fas fa-compass" aria-hidden="true"></i>
           <span>F-Guide</span>
         </div>
         <p class="footer-description">Life & Project Navigator</p>
-        <div class="footer-divider"></div>
+        <div class="footer-divider" aria-hidden="true"></div>
         <div class="footer-copyright">
           <p>App desenvolvido por <a href="https://github.com/felipesouzadsgn" target="_blank"
               rel="noopener noreferrer">Felipe Souza</a></p>
@@ -179,6 +209,21 @@
   </footer>
 
   <script type="module" src="src/scripts/main.js"></script>
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "WebApplication",
+      "name": "F-Guide",
+      "description": "Um dashboard pessoal para gerenciamento de vida e projetos. Organize suas atividades, acompanhe seu progresso e alcance seus objetivos.",
+      "author": {
+          "@type": "Person",
+          "name": "Felipe Souza",
+          "url": "https://github.com/felipesouzadsgn"
+      },
+      "applicationCategory": "Productivity",
+      "operatingSystem": "Web"
+  }
+  </script>
 </body>
 
 </html>
